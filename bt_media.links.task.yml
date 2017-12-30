@@ -1,0 +1,24 @@
+#bt_website_media_admin_task:
+#  title: 'Multimedia'
+#  route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-0
+#  base_route: page_manager.page_view_app_website_app_website-panels_variant-0
+#  weight: 3
+
+#bt_website_media_writer_task:
+#  title: 'Multimedia'
+#  route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-1
+#  base_route: page_manager.page_view_app_website_app_website-panels_variant-0
+#  weight: 3
+
+bt_website_media_admin_task:
+  title: 'Multimedia'
+  route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-0
+  #class: \Drupal\bt_media\Plugin\Menu\UserMediaLocalTask
+  base_route: page_manager.page_view_app_website_app_website-panels_variant-0
+  weight: 3
+
+#bt_website_media_writer_task:
+#  title: 'Multimedia'
+#  route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-1
+#  base_route: page_manager.page_view_app_website_app_website-panels_variant-0
+#  weight: 3

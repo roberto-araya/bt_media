@@ -1,0 +1,2 @@
+label: 'Etiquetas Media'
+pattern: '/media/etiqueta/[term:name]'

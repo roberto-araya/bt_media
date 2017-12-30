@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.app_website_media
+    - views.view.bt_admin_multimedia
+  module:
+    - panels
+    - user
+    - views
+id: app_website_media-panels_variant-1
+label: 'Media List'
+variant: panels_variant
+variant_settings:
+  blocks:
+    b14b243a-4fa2-4aad-96da-b31eb7f74942:
+      id: 'views_block:bt_admin_multimedia-media_list'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: contentmain
+      uuid: b14b243a-4fa2-4aad-96da-b31eb7f74942
+      weight: 1
+  id: panels_variant
+  uuid: ccd8c2c3-67bb-48f1-876d-d48378305612
+  label: null
+  weight: 0
+  layout: radix_boxton
+  layout_settings: {  }
+  page_title: Multimedia
+  storage_type: page_manager
+  storage_id: app_website_media-panels_variant-1
+  builder: ipe
+page: app_website_media
+weight: -9
+selection_criteria:
+  -
+    id: user_role
+    roles:
+      bt_create_content: bt_create_content
+    negate: false
+    context_mapping:
+      user: current_user
+selection_logic: and
+static_context: {  }

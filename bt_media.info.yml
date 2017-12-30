@@ -1,0 +1,7 @@
+name: Btester Media
+type: module
+description: Btester Multimedia
+core: 8.x
+package: Btester
+dependencies:
+  - bt_core

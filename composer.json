@@ -1,0 +1,36 @@
+{
+  "name": "drupal/bt_media",
+  "type": "drupal-module",
+  "description": "",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Roberto Araya",
+      "email": "roberto.araya@btester.cl",
+      "homepage": "https://www.drupal.org/u/roberto_araya",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://www.drupal.org/project/bt_media",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/bt_core": "dev-master",
+    "drupal/media_entity": "1.x-dev",
+    "drupal/media_entity_slideshow": "1.x-dev",
+    "drupal/media_pinkeye": "1.x-dev",
+    "drupal/media_entity_image": "1.x-dev",
+    "drupal/media_entity_instagram": "1.x-dev",
+    "drupal/media_entity_twitter": "1.x-dev",
+    "drupal/blazy": "1.x-dev",
+    "drupal/slick": "1.x-dev",
+    "drupal/slick_media": "1.x-dev",
+    "drupal/slick_video": "1.x-dev",
+    "drupal/slick_views": "1.x-dev",
+    "drupal/intense": "1.x-dev",
+    "drupal/jssor": "1.x-dev",
+    "drupal/video_embed_field": "1.x-dev",
+    "drupal/media_entity_document": "1.x-dev",
+    "drupal/ng_lightbox": "1.x-dev"
+  }
+}

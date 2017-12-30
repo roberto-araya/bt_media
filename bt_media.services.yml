@@ -1,0 +1,15 @@
+services:
+  bt_media.breadcrumbs:
+    class: Drupal\bt_media\Breadcrumb\MediaBreadcrumbBuilder
+    arguments: ['@current_user']
+    tags:
+      - { name: breadcrumb_builder, priority: 1010 }
+  bt_media_config.overrider:
+    class: Drupal\bt_media\Config\ConfigMediaOverride
+    arguments: ['@config.factory']
+    tags:
+      - {name: config.factory.override, priority: 25}
+  bt_media.route_subscriber:
+    class: Drupal\bt_media\Routing\MediaRouteSubscriber
+    tags:
+      - { name: event_subscriber, priority: -500 }
