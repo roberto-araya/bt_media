@@ -1,7 +1,7 @@
 services:
   bt_media.breadcrumbs:
     class: Drupal\bt_media\Breadcrumb\MediaBreadcrumbBuilder
-    arguments: ['@current_user']
+    arguments: ['@config.factory']
     tags:
       - { name: breadcrumb_builder, priority: 1010 }
   bt_media_config.overrider:

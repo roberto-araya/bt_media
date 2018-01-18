@@ -9,7 +9,6 @@ use Drupal\Core\Session\AccountInterface;
 
 /**
  * Defines the access control handler for the media entity type.
- *
  */
 class MediaTypeAccessControlHandler extends EntityAccessControlHandler {
 
@@ -20,8 +19,10 @@ class MediaTypeAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         return AccessResult::allowedIfHasPermission($account, 'create media');
+
       default:
         return parent::checkAccess($entity, $operation, $account);
     }
   }
+
 }

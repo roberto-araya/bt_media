@@ -2,7 +2,9 @@
   "name": "drupal/bt_media",
   "type": "drupal-module",
   "description": "This module extends Btester CMS by adding media management.",
-  "keywords": ["Drupal"],
+  "keywords": [
+    "Drupal"
+  ],
   "license": "GPL-2.0+",
   "authors": [
     {
