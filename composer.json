@@ -19,9 +19,7 @@
   "require": {
     "drupal/bt_core": "1.x-dev",
     "drupal/bt_cms": "1.x-dev",
-    "drupal/media_entity": "1.x-dev",
     "drupal/media_entity_slideshow": "1.x-dev",
-    "drupal/media_pinkeye": "1.x-dev",
     "drupal/media_entity_image": "1.x-dev",
     "drupal/media_entity_instagram": "1.x-dev",
     "drupal/media_entity_twitter": "1.x-dev",

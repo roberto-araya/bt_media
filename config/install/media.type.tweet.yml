@@ -6,8 +6,8 @@ dependencies:
 id: tweet
 label: Tweet
 description: 'Represents a tweet.'
-type: twitter
-type_configuration:
+source: twitter
+source_configuration:
   source_field: tweet
   use_twitter_api: 0
 field_map: {  }

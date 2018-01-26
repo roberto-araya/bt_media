@@ -6,7 +6,7 @@ dependencies:
 id: slideshow
 label: Slideshow
 description: 'Slideshows of media items.'
-type: slideshow
-type_configuration:
+source: slideshow
+source_configuration:
   source_field: slideshow_items
 field_map: {  }

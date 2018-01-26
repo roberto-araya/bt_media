@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - entity_reference
-    - media_entity
+    - media
 id: media.slideshow_items
 field_name: slideshow_items
 entity_type: media

@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - image
-    - media_entity
+    - media
 id: media.image
 field_name: image
 entity_type: media

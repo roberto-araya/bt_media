@@ -6,8 +6,8 @@ dependencies:
 id: instagram
 label: Instagram
 description: 'Instagram posts.'
-type: instagram
-type_configuration:
+source: instagram
+source_configuration:
   source_field: instagram
   use_instagram_api: 0
 field_map: {  }

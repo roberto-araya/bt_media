@@ -6,8 +6,8 @@ dependencies:
 id: image
 label: Image
 description: 'Locally hosted images.'
-type: image
-type_configuration:
+source: image
+source_configuration:
   source_field: image
   gather_exif: '0'
 field_map: {  }

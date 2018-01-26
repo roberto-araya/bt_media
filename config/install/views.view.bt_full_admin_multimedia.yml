@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - image.style.thumbnail
-    - media_entity.bundle.image
-    - media_entity.bundle.instagram
-    - media_entity.bundle.slideshow
-    - media_entity.bundle.tweet
+    - media.type.image
+    - media.type.instagram
+    - media.type.slideshow
+    - media.type.tweet
   module:
     - image
-    - media_entity
+    - media
     - user
 id: bt_full_admin_multimedia
 label: 'Full Multimedia Admin'

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - media_entity
+    - media
 id: media.bt_rectangle_21_30
 label: 'Rectangle 2/1 medium'
 targetEntityType: media
