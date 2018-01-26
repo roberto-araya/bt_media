@@ -20,7 +20,6 @@
     "drupal/bt_core": "1.x-dev",
     "drupal/bt_cms": "1.x-dev",
     "drupal/media_entity_slideshow": "1.x-dev",
-    "drupal/media_entity_image": "1.x-dev",
     "drupal/media_entity_instagram": "1.x-dev",
     "drupal/media_entity_twitter": "1.x-dev",
     "drupal/blazy": "1.x-dev",
@@ -30,8 +29,7 @@
     "drupal/slick_views": "1.x-dev",
     "drupal/intense": "1.x-dev",
     "drupal/jssor": "1.x-dev",
-    "drupal/video_embed_field": "1.x-dev",
-    "drupal/media_entity_document": "1.x-dev",
+    "drupal/video_embed_field": "2.x-dev",
     "drupal/ng_lightbox": "1.x-dev"
   }
 }
