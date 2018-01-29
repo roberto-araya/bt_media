@@ -48,5 +48,5 @@ function bt_media_menu_local_actions_alter(&$local_actions) {
  * Implements hook_entity_type_alter().
  */
 function bt_media_entity_type_alter(array &$entity_types) {
-  $entity_types['media_bundle']->setHandlerClass('access', 'Drupal\bt_media\MediaTypeAccessControlHandler');
+  $entity_types['media_type']->setHandlerClass('access', 'Drupal\bt_media\MediaTypeAccessControlHandler');
 }

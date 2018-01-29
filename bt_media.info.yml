@@ -6,6 +6,7 @@ package: Btester
 dependencies:
   - bt_core:bt_core
   - bt_cms:bt_cms
+  - media_entity_generic:media_entity_generic
   - media_entity_slideshow:media_entity_slideshow
   - media_entity_instagram:media_entity_instagram
   - media_entity_twitter:media_entity_twitter

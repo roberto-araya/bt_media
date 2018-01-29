@@ -10,7 +10,7 @@ use Drupal\Core\Entity\Controller\EntityController;
 class CustomMediaEntityController extends EntityController {
 
   /**
-   * Alter list excluding instagram, bt_documents adn tweet.
+   * Alter list excluding instagram, bt_document and tweet.
    */
   public function addPage($entity_type_id) {
     $build = parent::addPage($entity_type_id);

@@ -21,10 +21,10 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
       $route->setDefault('_title', 'Add Multimedia Element');
     }
 
-    // Change path '/media/add/{media_bundle}' to
-    // '/app/website/multimedia/add/{media_bundle}'.
+    // Change path '/media/add/{media_type}' to
+    // '/app/website/multimedia/add/{media_type}'.
     if ($route = $collection->get('entity.media.add_form')) {
-      $route->setPath('/app/website/multimedia/add/{media_bundle}');
+      $route->setPath('/app/website/multimedia/add/{media_type}');
     }
   }
 

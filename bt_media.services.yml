@@ -9,7 +9,7 @@ services:
     arguments: ['@config.factory']
     tags:
       - {name: config.factory.override, priority: 25}
-  bt_media.route_subscriber:
-    class: Drupal\bt_media\Routing\MediaRouteSubscriber
-    tags:
-      - { name: event_subscriber, priority: -500 }
+#  bt_media.route_subscriber:
+#    class: Drupal\bt_media\Routing\MediaRouteSubscriber
+#    tags:
+#      - { name: event_subscriber, priority: -500 }

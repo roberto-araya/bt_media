@@ -19,17 +19,18 @@
   "require": {
     "drupal/bt_core": "1.x-dev",
     "drupal/bt_cms": "1.x-dev",
-    "drupal/media_entity_slideshow": "2.x-dev",
+    "drupal/intense": "1.x-dev",
+    "drupal/jssor": "1.x-dev",
+    "drupal/media_entity_generic": "1.x-dev",
     "drupal/media_entity_instagram": "2.x-dev",
+    "drupal/media_entity_slideshow": "2.x-dev",
     "drupal/media_entity_twitter": "2.x-dev",
+    "drupal/ng_lightbox": "1.x-dev",
     "drupal/blazy": "1.x-dev",
     "drupal/slick": "1.x-dev",
     "drupal/slick_media": "2.x-dev",
     "drupal/slick_video": "1.x-dev",
     "drupal/slick_views": "1.x-dev",
-    "drupal/intense": "1.x-dev",
-    "drupal/jssor": "1.x-dev",
-    "drupal/video_embed_field": "2.x-dev",
-    "drupal/ng_lightbox": "1.x-dev"
+    "drupal/video_embed_field": "2.x-dev"
   }
 }
