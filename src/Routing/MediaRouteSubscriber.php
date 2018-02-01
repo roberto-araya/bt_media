@@ -16,7 +16,7 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
   public function alterRoutes(RouteCollection $collection) {
     // Change path '/media/add' to '/app/website/multimedia/add'.
     if ($route = $collection->get('entity.media.add_page')) {
-      $route->setPath('/app/website/multimedia/add');
+      $route->setPath('/app/website/media/add');
       $route->setDefault('_title_callback', NULL);
       $route->setDefault('_title', 'Add Multimedia Element');
     }
@@ -24,7 +24,7 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
     // Change path '/media/add/{media_type}' to
     // '/app/website/multimedia/add/{media_type}'.
     if ($route = $collection->get('entity.media.add_form')) {
-      $route->setPath('/app/website/multimedia/add/{media_type}');
+      $route->setPath('/app/website/media/add/{media_type}');
     }
   }
 

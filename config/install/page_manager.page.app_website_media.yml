@@ -7,7 +7,7 @@ id: app_website_media
 label: Media
 description: 'Page that list all multimedia contents.'
 use_admin_theme: true
-path: /app/website/multimedia
+path: /app/website/media
 access_logic: and
 access_conditions:
   -
