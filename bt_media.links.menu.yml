@@ -1,5 +1,5 @@
 bt_website_media_menu:
-  title: 'Multimedia'
+  title: 'Media'
   description: 'List of all multimedia assets'
   parent: bt_website_menu
   route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-0
@@ -7,7 +7,7 @@ bt_website_media_menu:
   menu_name: bt-menu-app
 
 bt_website_media_add_menu:
-  title: 'Add media element'
+  title: 'Add media'
   description: 'Add media element'
   parent: bt_website_media_menu
   route_name: entity.media.add_page
