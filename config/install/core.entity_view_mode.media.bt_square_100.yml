@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - media
-id: media.bt_square_100
-label: 'Square huge'
-targetEntityType: media
-cache: true

@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - media
-id: media.bt_square_20
-label: 'Square small'
-targetEntityType: media
-cache: true

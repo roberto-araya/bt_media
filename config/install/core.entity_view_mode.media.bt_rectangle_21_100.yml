@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - media
-id: media.bt_rectangle_21_100
-label: 'Rectangle 2/1 huge'
-targetEntityType: media
-cache: true
