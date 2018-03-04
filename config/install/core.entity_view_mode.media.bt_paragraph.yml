@@ -4,6 +4,6 @@ dependencies:
   module:
     - media
 id: media.bt_paragraph
-label: Párrafo
+label: Paragraph
 targetEntityType: media
 cache: true
