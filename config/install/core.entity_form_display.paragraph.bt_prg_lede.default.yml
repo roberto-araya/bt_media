@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.bt_prg_lede
   module:
     - text
-    - workbench_moderation
 id: paragraph.bt_prg_lede.default
 targetEntityType: paragraph
 bundle: bt_prg_lede
