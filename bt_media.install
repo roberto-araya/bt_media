@@ -12,4 +12,10 @@ function bt_media_install() {
   $pathauto_settings = \Drupal::configFactory()->getEditable('pathauto.settings');
   $entities = array_merge($pathauto_settings->get('enabled_entity_types'), array('media'));
   $pathauto_settings->set('enabled_entity_types', $entities)->save(TRUE);
+
+  // Disable media view.
+  \Drupal::entityTypeManager()->getStorage('view')
+    ->load('media')
+    ->setStatus(FALSE)
+    ->save();
 }
