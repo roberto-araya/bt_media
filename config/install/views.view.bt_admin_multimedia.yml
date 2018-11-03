@@ -66,10 +66,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ Previus'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '< Previous'
+            next: 'Next >'
+            first: '<< First'
+            last: 'Last >>'
           quantity: 9
       style:
         type: table
@@ -231,7 +231,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Miniatura
+          label: Thumbnail
           exclude: false
           alter:
             alter_text: false
@@ -297,7 +297,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Nombre
+          label: Name
           exclude: false
           alter:
             alter_text: false
@@ -594,7 +594,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: Nombre
+            label: Name
             description: ''
             use_operator: false
             operator: name_op
