@@ -14,8 +14,8 @@ function bt_media_install() {
   $pathauto_settings->set('enabled_entity_types', $entities)->save(TRUE);
 
   // Disable media view.
-  \Drupal::entityTypeManager()->getStorage('view')
+  /*\Drupal::entityTypeManager()->getStorage('view')
     ->load('media')
     ->setStatus(FALSE)
-    ->save();
+    ->save();*/
 }
