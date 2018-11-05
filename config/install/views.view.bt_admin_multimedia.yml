@@ -4,7 +4,6 @@ dependencies:
   config:
     - image.style.thumbnail
     - media.type.instagram
-    - media.type.slideshow
     - media.type.tweet
   module:
     - image
@@ -549,7 +548,6 @@ display:
           operator: 'not in'
           value:
             instagram: instagram
-            slideshow: slideshow
             tweet: tweet
           group: 1
           exposed: false
@@ -736,7 +734,7 @@ display:
           1: AND
       show_admin_links: false
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -756,7 +754,7 @@ display:
       block_description: 'Multimedia List'
       block_category: 'Admin UI'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
