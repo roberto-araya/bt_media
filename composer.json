@@ -5,7 +5,7 @@
   "keywords": [
     "Drupal"
   ],
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Roberto Araya",
@@ -17,20 +17,11 @@
   "homepage": "https://www.drupal.org/project/bt_media",
   "minimum-stability": "dev",
   "require": {
-    "drupal/bt_core": "dev-dev",
-    "drupal/bt_cms": "dev-dev",
-    "drupal/intense": "1.x-dev",
-    "drupal/jssor": "1.x-dev",
-    "drupal/media_entity_generic": "1.x-dev",
-    "drupal/media_entity_instagram": "2.x-dev",
-    "drupal/media_entity_slideshow": "2.x-dev",
-    "drupal/media_entity_twitter": "2.x-dev",
-    "drupal/ng_lightbox": "1.x-dev",
-    "drupal/blazy": "1.x-dev",
-    "drupal/slick": "1.x-dev",
-    "drupal/slick_media": "2.x-dev",
-    "drupal/slick_video": "1.x-dev",
-    "drupal/slick_views": "1.x-dev",
-    "drupal/crop": "2.x-dev"
+    "drupal/bt_cms": "dev-1.x",
+    "drupal/intense": "~2.2",
+    "drupal/jssor": "~1.0-rc6",
+    "drupal/ng_lightbox": "~1.0-beta3",
+    "drupal/slick_views": "~2.3",
+    "drupal/crop": "~2.1"
   }
 }
