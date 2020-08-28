@@ -14,7 +14,7 @@ class ConfigMediaOverride implements ConfigFactoryOverrideInterface {
    * {@inheritdoc}
    */
   public function loadOverrides($names) {
-    $overrides = array();
+    $overrides = [];
 
     if (in_array('core.entity_view_mode.media.slick', $names)) {
       $overrides['core.entity_view_mode.media.slick']['label'] = 'Slideshow';

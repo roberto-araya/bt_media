@@ -42,7 +42,6 @@ function bt_media_local_tasks_alter(&$local_tasks) {
   $local_tasks['entity.media.collection']['base_route'] = 'bt_cms.website';
 }
 
-
 /**
  * Implements hook_menu_local_actions_alter().
  */

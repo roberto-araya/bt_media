@@ -36,7 +36,7 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
     }
 
     if ($route = $collection->get('view.media_library.page')) {
-      //$route->setPath('/app/website/media');
+      // $route->setPath('/app/website/media');
       $route->setOption('_admin_route', TRUE);
     }
   }
