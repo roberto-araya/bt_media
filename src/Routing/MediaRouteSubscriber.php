@@ -19,6 +19,7 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
       $route->setPath('/app/website/media/add');
       $route->setDefault('_title_callback', NULL);
       $route->setDefault('_title', 'Add Multimedia Element');
+      $route->setDefault('_controller', '\Drupal\bt_media\Controller\CustomMediaEntityController::addPage');
     }
 
     // Change path '/media/add/{media_type}' to
@@ -30,7 +31,13 @@ class MediaRouteSubscriber extends RouteSubscriberBase {
     // Change path '/admin/content/media' to
     // '/app/website/media'.
     if ($route = $collection->get('entity.media.collection')) {
-      $route->setPath('/app/website/media/');
+      $route->setPath('/app/website/media');
+      $route->setOption('_admin_route', TRUE);
+    }
+
+    if ($route = $collection->get('view.media_library.page')) {
+      //$route->setPath('/app/website/media');
+      $route->setOption('_admin_route', TRUE);
     }
   }
 

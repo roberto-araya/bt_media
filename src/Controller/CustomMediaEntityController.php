@@ -16,7 +16,7 @@ class CustomMediaEntityController extends EntityController {
     $build = parent::addPage($entity_type_id);
     unset($build['#bundles']['instagram']);
     unset($build['#bundles']['tweet']);
-
+    unset($build['#bundles']['image']);
     return $build;
   }
 

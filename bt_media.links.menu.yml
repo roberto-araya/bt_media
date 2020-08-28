@@ -1,15 +1,15 @@
-bt_website_media_menu:
+bt_media.website_media_menu:
   title: 'Media'
   description: 'List of all multimedia assets'
-  parent: bt_website_menu
-  route_name: page_manager.page_view_app_website_media_app_website_media-panels_variant-0
+  parent: bt_cms.website_menu
+  route_name: entity.media.collection
   weight: 2
   menu_name: bt-menu-app
 
-bt_website_media_add_menu:
+bt_media.website_media_add_menu:
   title: 'Add media'
   description: 'Add media element'
-  parent: bt_website_media_menu
+  parent: bt_media.website_media_menu
   route_name: entity.media.add_page
   weight: 0
   menu_name: bt-menu-app

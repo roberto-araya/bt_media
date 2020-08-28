@@ -36,11 +36,18 @@ function bt_media_theme() {
 }
 
 /**
+ * Implements hook_local_tasks_alter().
+ */
+function bt_media_local_tasks_alter(&$local_tasks) {
+  $local_tasks['entity.media.collection']['base_route'] = 'bt_cms.website';
+}
+
+
+/**
  * Implements hook_menu_local_actions_alter().
  */
 function bt_media_menu_local_actions_alter(&$local_actions) {
-  $local_actions['media.add']['appears_on'][0] = 'page_manager.page_view_app_website_media_app_website_media-panels_variant-0';
-  $local_actions['media.add']['appears_on'][1] = 'page_manager.page_view_app_website_media_app_website_media-panels_variant-1';
+  $local_actions['media.add']['appears_on'][0] = 'entity.media.collection';
   $local_actions['media.add']['title'] = t('Add media');
 }
 

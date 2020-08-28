@@ -29,8 +29,7 @@ class MediaBreadcrumbBuilder implements BreadcrumbBuilderInterface {
     'entity.media.add_form',
     'entity.media.add_page',
     'entity.media.edit_form',
-    'page_manager.page_view_app_website_media_app_website_media-panels_variant-0',
-    'page_manager.page_view_app_website_media_app_website_media-panels_variant-1',
+    'entity.media.collection',
   ];
 
   /**
@@ -77,15 +76,15 @@ class MediaBreadcrumbBuilder implements BreadcrumbBuilderInterface {
     $breadcrumb = new Breadcrumb();
     $breadcrumb->addCacheContexts(["url"]);
 
-    $breadcrumb->addLink(Link::createFromRoute($this->siteName, 'page_manager.page_view_app_app-panels_variant-0'));
-    $breadcrumb->addLink(Link::createFromRoute('Website', 'page_manager.page_view_app_website_app_website-panels_variant-0'));
+    $breadcrumb->addLink(Link::createFromRoute($this->siteName, 'bt_core.app'));
+    $breadcrumb->addLink(Link::createFromRoute('Website', 'bt_cms.website'));
 
     if (in_array($route, [
       'entity.media.add_page',
       'entity.media.edit_form',
       'entity.media.add_form',
     ])) {
-      $breadcrumb->addLink(Link::createFromRoute('Media', 'page_manager.page_view_app_website_media_app_website_media-panels_variant-0'));
+      $breadcrumb->addLink(Link::createFromRoute('Media', 'entity.media.collection'));
       if ($route == 'entity.media.add_form') {
         $breadcrumb->addLink(Link::createFromRoute('Add media', 'entity.media.add_page'));
       }

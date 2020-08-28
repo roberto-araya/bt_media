@@ -22,6 +22,9 @@ class ConfigMediaOverride implements ConfigFactoryOverrideInterface {
     if (in_array('core.entity_view_mode.media.library_thumbnail', $names)) {
       $overrides['core.entity_view_mode.media.library_thumbnail']['label'] = 'Miniature';
     }
+    if (in_array('views.view.media_library', $names)) {
+      $overrides['views.view.media_library']['display']['page']['display_options']['path'] = 'app/website/media-grid';
+    }
 
     return $overrides;
   }

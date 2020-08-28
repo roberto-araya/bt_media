@@ -4,10 +4,7 @@ description: Btester Multimedia
 core: 8.x
 package: Btester
 dependencies:
-  - bt_core:bt_core
-  - bt_cms:bt_cms
+  - drupal:media
+  - drupal:media_library
+  - bt_cms:bt_cms 
   - crop:crop
-  - media_entity_generic:media_entity_generic
-  - media_entity_slideshow:media_entity_slideshow
-  - media_entity_instagram:media_entity_instagram
-  - media_entity_twitter:media_entity_twitter
