@@ -61,6 +61,8 @@ mkdir -p "build/web/modules/${MODULE}"
 ln -s "$(pwd)"/* build/web/modules/"${MODULE}" && rm build/web/modules/"${MODULE}"/build
 
 echo "==> Enable module ${MODULE}"
+build/vendor/bin/drush -r build/web pm:enable bt_core -y
+build/vendor/bin/drush -r build/web pm:enable bt_cms -y
 build/vendor/bin/drush -r build/web pm:enable "${MODULE}" -y
 build/vendor/bin/drush -r build/web cr
 build/vendor/bin/drush -r build/web -l http://localhost:8000 uli --no-browser
