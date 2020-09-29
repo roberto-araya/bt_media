@@ -9,7 +9,7 @@ use Drupal\Core\Link;
 use Drupal\Core\Config\ConfigFactory;
 
 /**
- * Class MediaBreadcrumbBuilder.
+ * Media entities breadcrumbs.
  */
 class MediaBreadcrumbBuilder implements BreadcrumbBuilderInterface {
 
