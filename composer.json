@@ -17,7 +17,7 @@
   "homepage": "https://www.drupal.org/project/bt_media",
   "minimum-stability": "dev",
   "require": {
-    "drupal/bt_cms": "dev-1.x",
+    "drupal/bt_cms": "^1.0-alpha1",
     "drupal/intense": "~2.2",
     "drupal/jssor": "~1.0-rc6",
     "drupal/ng_lightbox": "~1.0-beta3",
