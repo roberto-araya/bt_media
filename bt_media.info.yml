@@ -1,7 +1,7 @@
 name: Btester Media
 type: module
 description: Btester Multimedia
-core_version_requirement: ^8.8
+core_version_requirement: ^9.2
 package: Btester
 dependencies:
   - drupal:media
