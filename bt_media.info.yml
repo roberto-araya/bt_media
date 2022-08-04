@@ -6,5 +6,6 @@ package: Btester
 dependencies:
   - drupal:media
   - drupal:media_library
-  - bt_cms:bt_cms 
+  - drupal:media
+  - bt_cms:bt_cms
   - crop:crop
