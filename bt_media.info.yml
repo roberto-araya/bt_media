@@ -7,5 +7,6 @@ dependencies:
   - drupal:media
   - drupal:media_library
   - drupal:media
+  - ctools:ctools
   - bt_cms:bt_cms
   - crop:crop
