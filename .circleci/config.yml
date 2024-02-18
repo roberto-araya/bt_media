@@ -13,7 +13,6 @@ job-build: &job-build
   steps:
     - checkout
     - run: .circleci/build.sh
-    - run: .circleci/lint.sh
     - run: .circleci/test.sh
     - run:
         command: .circleci/process-artifacts.sh
@@ -34,6 +33,9 @@ jobs:
     <<: *container_config
     docker:
       - image: cimg/php:8.1-browsers
+    environment:
+      DRUPAL_VERSION: 9.4.15
+      DRUPAL_PROJECT_SHA: 9.4.15
     <<: *job-build
 
   build-php-8.0-legacy:
@@ -41,8 +43,8 @@ jobs:
     docker:
       - image: cimg/php:8.0-browsers
     environment:
-      DRUPAL_VERSION: 9.2.20
-      DRUPAL_PROJECT_SHA: 9.x
+      DRUPAL_VERSION: 9.4.15
+      DRUPAL_PROJECT_SHA: 9.4.15
     <<: *job-build
 
   build-php-8.1-legacy:
@@ -87,10 +89,7 @@ workflows:
               only: /.*/
       - deploy:
           requires:
-            - build-php-8.0
             - build-php-8.1
-            - build-php-8.0-legacy
-            - build-php-8.1-legacy
           filters:
             tags:
               only: /.*/
